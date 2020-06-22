@@ -1,14 +1,18 @@
 import React from "react"
 import Layout from "../components/layout"
+import DownloadNow from "../components/download-now"
 
 export default function Home() {
   return (
     <Layout>
       <div>
-        <h1>Replug</h1>
-        <p>Tesla Route Planner</p>
-        <a href="https://apps.apple.com/us/app/replug/id1279136790">Download from App Store!</a>
-        <img src="https://source.unsplash.com/random/400x200" alt="" />
+        <p>
+          <h2>Replug</h2>
+          Tesla Route Planner
+        </p>
+        <div style={{ display: `flex`, justifyContent: `center` }}>
+          <DownloadNow />
+        </div>
       </div>
     </Layout>
   )
